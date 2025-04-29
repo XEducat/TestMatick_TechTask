@@ -14,21 +14,6 @@ Java application that demonstrates OOP principles through geometric shapes manip
 - Java 17+
 - Maven (for dependency management)
 
-## 📦 Project Structure
-
-```
-src/
-├── Interface/
-│   └── Shape.java
-├── Models/
-│   ├── Circle.java
-│   ├── Square.java
-│   ├── Triangle.java
-│   └── Trapezoid.java
-├── ShapeFactory.java
-└── Main.java
-```
-
 ## 🚀 Quick Start
 
 1. Clone and navigate to project:
