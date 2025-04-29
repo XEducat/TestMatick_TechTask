@@ -2,10 +2,10 @@ package Models;
 import Interfaces.Shape;
 
 public class Trapezoid implements Shape {
-    private double base1;
-    private double base2;
-    private double height;
-    private String color;
+    private final double base1;
+    private final double base2;
+    private final double height;
+    private final String color;
 
     public Trapezoid(double base1, double base2, double height, String color) {
         this.base1 = base1;
@@ -16,7 +16,7 @@ public class Trapezoid implements Shape {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a trapezoid with bases " + base1 + " and " + base2 + ", height " + height);
+        System.out.printf("Drawing a trapezoid with bases %.2f and %.2f, height %.2f%n", base1, base2, height);
     }
 
     @Override

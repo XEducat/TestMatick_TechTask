@@ -1,6 +1,10 @@
 package Interfaces;
 
-// The Shape interface provides an abstract representation of a shape.
+
+/**
+ * Interface representing a geometric shape.
+ * Defines common behavior for all shape implementations.
+ */
 public interface Shape {
     void draw();
     double getArea();

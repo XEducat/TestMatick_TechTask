@@ -2,9 +2,9 @@ package Models;
 import Interfaces.Shape;
 
 public class Triangle implements Shape {
-    private double base;
-    private double height;
-    private String color;
+    private final double base;
+    private final double height;
+    private final String color;
 
     public Triangle(double base, double height, String color) {
         this.base = base;
@@ -14,7 +14,7 @@ public class Triangle implements Shape {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a triangle with base " + base + " and height " + height);
+        System.out.printf("Drawing a triangle with base %.2f and height %.2f%n", base, height);
     }
 
     @Override

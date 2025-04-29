@@ -2,8 +2,8 @@ package Models;
 import Interfaces.Shape;
 
 public class Square implements Shape {
-    private double side;
-    private String color;
+    private final double side;
+    private final String color;
 
     public Square(double side, String color) {
         this.side = side;
@@ -12,7 +12,7 @@ public class Square implements Shape {
 
     @Override
     public void draw() {
-        System.out.println("Drawing a square with side " + side);
+        System.out.printf("Drawing a square with side %.2f%n", side);
     }
 
     @Override
