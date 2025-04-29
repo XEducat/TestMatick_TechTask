@@ -26,4 +26,22 @@ public class Triangle implements Shape {
     public String getColor() {
         return color;
     }
+
+    public double getBase() {
+        return base;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getHypotenuse() {
+        return Math.sqrt(base * base + height * height);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Shape: triangle, area: %.1f sq. units, base: %.1f units, height: %.1f units, hypotenuse: %.1f units, color: %s.",
+                getArea(), getBase(), getHeight(), getHypotenuse(), getColor());
+    }
 }

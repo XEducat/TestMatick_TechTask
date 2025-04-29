@@ -24,4 +24,18 @@ public class Circle implements Shape {
     public String getColor() {
         return color;
     }
+
+    public double getRadius() {
+        return radius;
+    }
+
+    public double getDiameter() {
+        return 2 * radius;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Shape: circle, area: %.1f sq. units, radius: %.1f units, diameter: %.1f units, color: %s.",
+                getArea(), getRadius(), getDiameter(), getColor());
+    }
 }

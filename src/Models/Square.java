@@ -24,4 +24,18 @@ public class Square implements Shape {
     public String getColor() {
         return color;
     }
+
+    public double getSide() {
+        return side;
+    }
+
+    public double getPerimeter() {
+        return 4 * side;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Shape: square, area: %.1f sq. units, side length: %.1f units, perimeter: %.1f units, color: %s.",
+                getArea(), getSide(), getPerimeter(), getColor());
+    }
 }

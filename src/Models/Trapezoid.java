@@ -28,4 +28,22 @@ public class Trapezoid implements Shape {
     public String getColor() {
         return color;
     }
+
+    public double getBase1() {
+        return base1;
+    }
+
+    public double getBase2() {
+        return base2;
+    }
+
+    public double getMidline() {
+        return (base1 + base2) / 2;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Shape: trapezoid, area: %.1f sq. units, bases: %.1f units and %.1f units, midline: %.1f units, color: %s.",
+                getArea(), getBase1(), getBase2(), getMidline(), getColor());
+    }
 }
